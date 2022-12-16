@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    box-shadow: -1px -1px 39px -12px rgba(166,166,166,0.67);
+}
+
+nav img{
+    width: 150px;
+}
+
+nav .container-menu{
+    display: flex;
+    list-style: none;
+}
+
+nav .container-menu li{
+    margin: 0 15px;
+}
+
+nav .container-menu li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+
+nav .container-menu li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+nav .menu-btn i{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: #000;
+}
+
+.container-main-banner{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/hero_l_pc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.container-main-banner h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+
+
+
+/* de 350 a 767 telefono */
+/* de 768 a 1024 tablet */
+/* de 1024 a 1440 laptop xd */
+@media (max-width: 940px){
+    nav{
+        height: 90px;
+        padding: 0 30px;
+    }
+   nav img{
+    width: 200px;
+   }
+
+    nav .container-menu{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    nav .container-menu li{
+        margin: 80px 0;
+    }
+
+    nav .container-menu li a{
+        font-size: 25px;
+        display: block;
+        color: #fff;
+    }
+
+    nav .container-menu li a:hover{
+        background-color: none;
+    }
+}
